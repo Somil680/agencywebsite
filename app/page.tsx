@@ -3,11 +3,20 @@
 
 export default function Home() {
   return (
-    <div>
-      <img src="./img.png" alt="Logo" />
+   <div>
+  {/* Laptop / Desktop Image */}
+  <img
+    src="./img.png"
+    alt="Logo"
+    className="hidden md:block"
+  />
 
-
-
-      </div>
+  {/* Mobile Image */}
+  <img
+    src="./img2.png"
+    alt="Logo"
+    className="block md:hidden"
+  />
+</div>
   )
 }
